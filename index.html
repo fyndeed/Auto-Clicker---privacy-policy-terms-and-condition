@@ -17,33 +17,36 @@
 <body>
 
 <h1>Auto Clicker</h1>
-<p><strong>Last updated:</strong> September 12, 2026</p>
+<p><strong>Last updated:</strong> October 07, 2026</p>
 
 <h2>Privacy Policy</h2>
-<p>This application does not collect, store, or transmit any personal data. All settings and preferences are stored locally on your device only.</p>
-<p>No data is sent to any external servers. There are no third-party analytics, advertising, or tracking services integrated in this app.</p>
-<p>The app requires certain system permissions (Display over other apps, Accessibility Service, Battery optimization exemption, Foreground service, and Wake lock) solely for its core auto-tapping functionality. These permissions are not used to collect any information about you or your device usage.</p>
-<p>Upon uninstalling the app, all locally stored data is permanently deleted.</p>
 
-<h2>Permissions Used</h2>
+<h3>1. Data we collect</h3>
+<p>Auto Clicker does not collect, store or transmit any personal data. Your settings (tap interval, overlay size and position) are saved only on your device. No data is sent to any server, and there are no third-party analytics, advertising or tracking services in this app.</p>
 
-<h3>Display Over Other Apps</h3>
-<p>Needed to show the floating overlay circle on top of other applications. Without this permission, the overlay cannot be displayed.</p>
+<h3>2. Accessibility Service (AccessibilityService API)</h3>
+<p>Auto Clicker uses the Android AccessibilityService API only to perform tap gestures at the screen position you choose with the floating circle, at the interval you set, after you press Start.</p>
+<p>The service does not read, record, store or share what is shown on your screen, including text, passwords, messages and notifications. It is not used for advertising, analytics or any purpose other than performing taps.</p>
+<p>Before you are taken to Accessibility Settings, the app shows a prominent in-app disclosure and you must tap Accept. The service stays off until you enable it, and you can turn it off at any time in Settings &gt; Accessibility.</p>
 
-<h3>Accessibility Service</h3>
-<p>Used to dispatch automated tap gestures at the configured position. This permission is essential for the auto-click feature to work. You can disable this service at any time from your device's accessibility settings.</p>
+<h3>3. Other permissions</h3>
+<ul>
+<li><strong>Display over other apps:</strong> shows the floating circle on top of other apps.</li>
+<li><strong>Foreground service and Notifications:</strong> keep the tap loop running and show its status notification.</li>
+<li><strong>Wake lock:</strong> keeps the CPU awake while the tap loop runs.</li>
+<li><strong>Battery optimization exemption:</strong> stops the system from closing the app in the background.</li>
+<li><strong>Autostart (Xiaomi / Redmi / Poco only):</strong> lets the app keep running in the background on MIUI / HyperOS.</li>
+</ul>
+<p>None of these permissions is used to collect information about you or your device.</p>
 
-<h3>Battery Optimization</h3>
-<p>Allows the app to run smoothly in the background. Without this exemption, aggressive battery optimization on certain devices (Xiaomi, Samsung, Vivo, Oppo, etc.) may stop the service.</p>
+<h3>4. Data sharing</h3>
+<p>We do not sell, share or disclose any data to third parties.</p>
 
-<h3>Foreground Service</h3>
-<p>Keeps the auto-click loop running in the background. A persistent notification is displayed while the service is active.</p>
+<h3>5. Data deletion</h3>
+<p>Uninstalling the app permanently deletes all locally stored data.</p>
 
-<h3>Wake Lock</h3>
-<p>Prevents the CPU from sleeping when the screen is off, ensuring the tap loop continues to run reliably.</p>
-
-<h3>Post Notifications (Android 13+)</h3>
-<p>Required to display the foreground service notification on Android 13 and above.</p>
+<h3>6. Contact</h3>
+<p>For any questions or concerns, contact: <a href="mailto:votmic.india@gmail.com">votmic.india@gmail.com</a></p>
 
 <h2>Terms of Service</h2>
 <p>By using this application, you agree to the following terms:</p>
@@ -79,12 +82,35 @@
 <li>Violation of these terms may result in access being restricted.</li>
 </ul>
 
+<h2>Permissions Used</h2>
+
+<h3>Display Over Other Apps</h3>
+<p>Needed to show the floating overlay circle on top of other applications. Without this permission, the overlay cannot be displayed.</p>
+
+<h3>Accessibility Service</h3>
+<p>Used only to perform tap gestures at the position you configured. It does not read or collect your screen content or personal data. Before you are taken to Accessibility Settings, a dialog explains this and you must tap Accept or Decline. You can disable the service at any time in your device's accessibility settings.</p>
+
+<h3>Battery Optimization</h3>
+<p>Allows the app to run smoothly in the background. Without this exemption, aggressive battery optimization on certain devices (Xiaomi, Samsung, Vivo, Oppo, etc.) may stop the service.</p>
+
+<h3>MIUI Autostart (Xiaomi/Redmi/Poco only)</h3>
+<p>Xiaomi, Redmi and Poco devices have an additional Autostart setting that must be enabled for the app to run in the background. Without it, the system may kill the service even if Battery Optimization is exempted. A dialog explains this and you can choose Allow or Not now.</p>
+
+<h3>Foreground Service</h3>
+<p>Keeps the auto-click loop running in the background. A persistent notification is displayed while the service is active.</p>
+
+<h3>Wake Lock</h3>
+<p>Prevents the CPU from sleeping when the screen is off, ensuring the tap loop continues to run reliably.</p>
+
+<h3>Post Notifications (Android 13+)</h3>
+<p>Required to display the foreground service notification on Android 13 and above.</p>
+
 <h2>Contact</h2>
 <p>For any questions, concerns, or bug reports, please contact: <a href="mailto:votmic.india@gmail.com">votmic.india@gmail.com</a></p>
 <p>When reporting a bug, please include your device brand and Android version — this helps especially for MIUI/Xiaomi-related issues.</p>
 
 <footer>
-<p>Auto Clicker | Version 1.0 | Package: com.votmic.autoclicker</p>
+<p>Auto Clicker | Version 1.0.3 | Package: com.votmic.autoclicker</p>
 <p>&copy; 2026 Votmic. All rights reserved.</p>
 </footer>
 
